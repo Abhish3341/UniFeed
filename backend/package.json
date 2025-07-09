@@ -1,0 +1,41 @@
+{
+  "name": "content-dashboard-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "express": "latest",
+    "cors": "latest",
+    "helmet": "latest",
+    "morgan": "latest",
+    "dotenv": "latest",
+    "axios": "latest",
+    "bcryptjs": "latest",
+    "jsonwebtoken": "latest",
+    "express-rate-limit": "latest",
+    "express-validator": "latest",
+    "socket.io": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "latest",
+    "@types/cors": "latest",
+    "@types/morgan": "latest",
+    "@types/bcryptjs": "latest",
+    "@types/jsonwebtoken": "latest",
+    "@types/node": "latest",
+    "typescript": "latest",
+    "nodemon": "latest",
+    "ts-node": "latest",
+    "jest": "latest",
+    "@types/jest": "latest",
+    "ts-jest": "latest",
+    "supertest": "latest",
+    "@types/supertest": "latest"
+  }
+}

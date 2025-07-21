@@ -1,41 +1,33 @@
 {
-  "name": "content-dashboard-backend",
+  "name": "pgagi-unifeed-dashboard-backend",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Backend API for UniFeed Dashboard",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
     "build": "tsc",
-    "start": "node dist/server.js",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest"
   },
   "dependencies": {
-    "express": "latest",
-    "cors": "latest",
-    "helmet": "latest",
-    "morgan": "latest",
-    "dotenv": "latest",
-    "axios": "latest",
-    "bcryptjs": "latest",
-    "jsonwebtoken": "latest",
-    "express-rate-limit": "latest",
-    "express-validator": "latest",
-    "socket.io": "latest"
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0",
+    "node-cron": "^3.0.2",
+    "redis": "^4.6.8"
   },
   "devDependencies": {
-    "@types/express": "latest",
-    "@types/cors": "latest",
-    "@types/morgan": "latest",
-    "@types/bcryptjs": "latest",
-    "@types/jsonwebtoken": "latest",
-    "@types/node": "latest",
-    "typescript": "latest",
-    "nodemon": "latest",
-    "ts-node": "latest",
-    "jest": "latest",
-    "@types/jest": "latest",
-    "ts-jest": "latest",
-    "supertest": "latest",
-    "@types/supertest": "latest"
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.6.2",
+    "@types/node-cron": "^3.0.8",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.5"
   }
 }
